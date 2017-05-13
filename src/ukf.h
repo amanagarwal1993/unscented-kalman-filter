@@ -60,19 +60,22 @@ public:
   VectorXd weights_;
 
   ///* State dimension
-  int n_x_;
+  int n_x;
 
   ///* Augmented state dimension
-  int n_aug_;
+  int n_aug;
 
   ///* Sigma point spreading parameter
-  double lambda_;
+  double lambda;
 
   ///* the current NIS for radar
   double NIS_radar_;
 
   ///* the current NIS for laser
   double NIS_laser_;
+    
+  MatrixXd R_radar;
+  MatrixXd R_laser;
 
   /**
    * Constructor

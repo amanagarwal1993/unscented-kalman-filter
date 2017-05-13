@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "89FE43A25742E0F927012FCE07035176D1A0B53C+++7E9B642",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++7E9B642" : 9223372036854775807,
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++0AD843D" : 9223372036854775807,
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++9137096" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B363EDB7-3DF0-4F15-9B14-7E6CD65BD563",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++7E9B642" : "unscented-kalman-filter\/",
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++0AD843D" : "CarND-Unscented-Kalman-Filter-Project\/",
+    "89FE43A25742E0F927012FCE07035176D1A0B53C+++9137096" : "CarND-Unscented-Kalman-Filter-Project\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UnscentedKF",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UnscentedKF.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/udacity\/CarND-Unscented-Kalman-Filter-Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89FE43A25742E0F927012FCE07035176D1A0B53C+++0AD843D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amanagarwal1993\/unscented-kalman-filter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89FE43A25742E0F927012FCE07035176D1A0B53C+++7E9B642"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amanagarwal1993\/unscented-kalman-filter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89FE43A25742E0F927012FCE07035176D1A0B53C+++9137096"
+    }
+  ]
+}
