@@ -410,12 +410,18 @@ void UKF::UpdateRadar(MeasurementPackage meas_package) {
         phi = fmod(phi, 2*M_PI);
         
         double rho = sqrt(px*px + py*py);
+        if (px == 0) {
+            // This will make atan2(py,px) undefined.
+            // Better to set it to 0.05 instead.
+            px = 0.05;
+        }
         double omega = atan2(py, px);
         
         omega = fmod(omega, 2*M_PI);
         
         if (rho < 0.005) {
-            std::cout << "Zero rho Xsig_pred radar = \n" << Xsig_pred_.col(i) << "\n\n";
+            rho = 0.05;
+            std::cout << "What's going wrong? Xsig_pred radar = \n" << Xsig_pred_.col(i) << "\n\n";
         }
         
         double rho_dot = v*(px*cos(phi) + py*sin(phi))/rho;
