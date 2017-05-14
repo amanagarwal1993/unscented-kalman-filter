@@ -102,11 +102,11 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
         else {
             x_ << 0,0,0,0,0;
             
-            P_ << 0,0,0,0,0,
-                  0,0,0,0,0,
-                  0,0,0,0,0,
-                  0,0,0,0,0,
-                  0,0,0,0,0;
+            P_ << 1,0,0,0,0,
+                  0,1,0,0,0,
+                  0,0,1,0,0,
+                  0,0,0,1,0,
+                  0,0,0,0,1;
             std::cout << "Error - the data file has some weird starting value. \n";
         }
         
@@ -309,14 +309,7 @@ void UKF::Prediction(double dt) {
  * @param {MeasurementPackage} meas_package
  */
 void UKF::UpdateLidar(MeasurementPackage meas_package) {
-  /**
-  TODO:
 
-  Complete this function! Use lidar data to update the belief about the object's
-  position. Modify the state vector, x_, and covariance, P_.
-
-  You'll also need to calculate the lidar NIS.
-  */
     n_x = 5;
     n_aug = 7;
     int n_z = 2;
@@ -390,14 +383,6 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
  * @param {MeasurementPackage} meas_package
  */
 void UKF::UpdateRadar(MeasurementPackage meas_package) {
-  /**
-  TODO:
-
-  Complete this function! Use radar data to update the belief about the object's
-  position. Modify the state vector, x_, and covariance, P_.
-
-  You'll also need to calculate the radar NIS.
-  */
     
     n_x = 5;
     n_aug = 7;
