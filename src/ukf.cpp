@@ -342,8 +342,6 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
     for (int j=0; j<cols; j++) {
         z_pred = z_pred + weights_(j)*Zsig.col(j);
     };
-    std::cout << "z pred_ laser = \n" << z_pred << "\n\n";
-    
     
     for (int k=0; k<cols; k++) {
         S = S + weights_(k) * (Zsig.col(k) - z_pred) * (Zsig.col(k) - z_pred).transpose();
@@ -353,7 +351,6 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
     
     VectorXd z = VectorXd(n_z);
     z << meas_package.raw_measurements_(0), meas_package.raw_measurements_(1);
-    std::cout << "z laser = \n" << z << "\n\n";
     
     MatrixXd Tc = MatrixXd::Zero(n_x, n_z);
     
